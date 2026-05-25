@@ -1,0 +1,16 @@
+{
+  "name": "mern-azure-deployment",
+  "version": "1.0.0",
+  "description": "Production MERN application configured for Azure App Service deployment",
+  "main": "server.js",
+  "scripts": {
+    "setup-dependencies": "npm install && cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  }
+}
